@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transacción</title>
+</head>
+<body>
+    <h1>Registrar Transacción</h1>
+    <form action="#" th:action="@{/transaccion}" th:object="${transaccion}" method="post">
+        <label>RUT Cliente: <input type="text" th:field="*{rutCliente}" /></label><br>
+        <label>RUT Dueño: <input type="text" th:field="*{rutDueno}" /></label><br>
+        <label>ID Cuenta: <input type="number" th:field="*{idCuenta}" /></label><br>
+        <label>Monto Transferencia: <input type="number" th:field="*{montoTransferencia}" /></label><br>
+        <label>Cuenta Transferencia: <input type="text" th:field="*{cuentaTransferencia}" /></label><br>
+        <label>Tipo Cuenta: <input type="text" th:field="*{tipoCuenta}" /></label><br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>

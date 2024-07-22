@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Persona</title>
+</head>
+<body>
+    <h1>Registrar Persona</h1>
+    <form action="#" th:action="@{/persona}" th:object="${persona}" method="post">
+        <label>RUT: <input type="text" th:field="*{rut}" /></label><br>
+        <label>Nombre: <input type="text" th:field="*{nombre}" /></label><br>
+        <label>Apellido: <input type="text" th:field="*{apellido}" /></label><br>
+        <label>Dirección: <input type="text" th:field="*{direccion}" /></label><br>
+        <label>Correo: <input type="email" th:field="*{correo}" /></label><br>
+        <label>Teléfono: <input type="text" th:field="*{telefono}" /></label><br>
+        <label>Nombre de Mascota: <input type="text" th:field="*{nombreMascota}" /></label><br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>

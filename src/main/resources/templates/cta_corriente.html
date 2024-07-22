@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cuenta Corriente</title>
+</head>
+<body>
+    <h1>Registrar Cuenta Corriente</h1>
+    <form action="#" th:action="@{/cta_corriente}" th:object="${ctaCorriente}" method="post">
+        <label>RUT Cliente: <input type="text" th:field="*{rutCliente}" /></label><br>
+        <label>Monto: <input type="number" th:field="*{monto}" /></label><br>
+        <label>RUT Ejecutivo: <input type="text" th:field="*{rutEjecutivo}" /></label><br>
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
